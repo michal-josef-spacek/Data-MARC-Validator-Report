@@ -23,6 +23,9 @@ no_index:
     - xt
 requires:
   Mo: 0
+  Mo::utils: 0
+  Mo::utils::Array: 0
+  Mo::utils::Hash: 0
   perl: 5.8.0
 resources:
   bugtracker: https://github.com/michal-josef-spacek/Data-MARC-Validator-Report/issues
