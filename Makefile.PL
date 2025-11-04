@@ -25,6 +25,8 @@ requires 'Mo::utils::Hash' => 0;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Data-MARC-Validator-Report/issues';
 resources 'homepage' => 'https://github.com/michal-josef-spacek/Data-MARC-Validator-Report';
 resources 'repository' => 'git://github.com/michal-josef-spacek/Data-MARC-Validator-Report';
+test_requires 'English' => 0;
+test_requires 'Error::Pure::Utils' => 0;
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;
 tests_recursive;
