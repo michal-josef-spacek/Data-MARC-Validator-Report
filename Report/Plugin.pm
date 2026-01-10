@@ -14,11 +14,11 @@ has errors => (
 	is => 'ro',
 );
 
-has module_name => (
+has name => (
 	is => 'ro',
 );
 
-has module_version => (
+has version => (
 	is => 'ro',
 );
 
@@ -28,12 +28,12 @@ sub BUILD {
 	# Check 'errors'.
 	check_array_object($self, 'errors', 'Data::MARC::Validator::Report::Error');
 
-	# Check 'module_name'.
-	check_required($self, 'module_name');
-	check_length($self, 'module_name', 255);
+	# Check 'name'.
+	check_required($self, 'name');
+	check_length($self, 'name', 255);
 
-	# Check 'module_version'.
-	check_required($self, 'module_name');
+	# Check 'version'.
+	check_required($self, 'name');
 	# TODO Check Perl version
 
 	return;
