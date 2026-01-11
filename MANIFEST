@@ -22,6 +22,10 @@ Report/Plugin.pm
 t/Data-MARC-Validator-Report-Error/01-use.t
 t/Data-MARC-Validator-Report-Error/02-version.t
 t/Data-MARC-Validator-Report-Error/03-new.t
+t/Data-MARC-Validator-Report-Error/04-error.t
+t/Data-MARC-Validator-Report-Error/05-filters.t
+t/Data-MARC-Validator-Report-Error/06-params.t
+t/Data-MARC-Validator-Report-Error/07-record_id.t
 t/Data-MARC-Validator-Report-Plugin/01-use.t
 t/Data-MARC-Validator-Report-Plugin/02-version.t
 t/Data-MARC-Validator-Report-Plugin/03-new.t
