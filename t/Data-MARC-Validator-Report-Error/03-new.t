@@ -4,7 +4,7 @@ use warnings;
 use Data::MARC::Validator::Report::Error;
 use English;
 use Error::Pure::Utils qw(clean);
-use Test::More 'tests' => 4;
+use Test::More 'tests' => 6;
 use Test::NoWarnings;
 
 # Test.
@@ -22,6 +22,30 @@ eval {
 };
 is($EVAL_ERROR, "Parameter 'error' is required.\n",
 	"Parameter 'error' is required.");
+clean();
+
+# Test.
+eval {
+	Data::MARC::Validator::Report::Error->new(
+		'error' => 'This is the error',
+		'filters' => 'bad',
+		'record_id' => 'id1',
+	);
+};
+is($EVAL_ERROR, "Parameter 'filters' must be a array.\n",
+	"Parameter 'filters' must be a array (string).");
+clean();
+
+# Test.
+eval {
+	Data::MARC::Validator::Report::Error->new(
+		'error' => 'This is the error',
+		'params' => 'bad',
+		'record_id' => 'id1',
+	);
+};
+is($EVAL_ERROR, "Parameter 'params' isn't hash reference.\n",
+	"Parameter 'params' isn't hash reference (string).");
 clean();
 
 # Test.
