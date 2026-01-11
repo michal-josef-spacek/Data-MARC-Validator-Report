@@ -1,7 +1,6 @@
 TODO
 ====
 2. Doc.
-3. Tests.
 4. Improve constructor tests (errors).
 5.
 
@@ -9,3 +8,6 @@ Applied
 =======
 1. First version of report object.
 OK [20251103] skim
+
+3. Tests.
+OK [20260111] skim
