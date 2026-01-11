@@ -35,6 +35,8 @@ t/Data-MARC-Validator-Report-Plugin/06-version.t
 t/Data-MARC-Validator-Report/01-use.t
 t/Data-MARC-Validator-Report/02-version.t
 t/Data-MARC-Validator-Report/03-new.t
+t/Data-MARC-Validator-Report/04-datetime.t
+t/Data-MARC-Validator-Report/05-plugins.t
 xt/Data-MARC-Validator-Report-Error/01-pod_coverage.t
 xt/Data-MARC-Validator-Report-Error/02-pod.t
 xt/Data-MARC-Validator-Report-Filter/01-pod_coverage.t
