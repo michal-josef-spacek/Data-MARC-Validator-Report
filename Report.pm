@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 use Mo qw(build default is);
-use Mo::utils 0.08 qw(check_isa);
+use Mo::utils 0.08 qw(check_isa check_required);
 use Mo::utils::Array qw(check_array_object);
 
 our $VERSION = 0.01;
@@ -23,6 +23,7 @@ sub BUILD {
 
 	# Check 'datetime'.
 	check_isa($self, 'datetime', 'DateTime');
+	check_required($self, 'datetime');
 
 	# Check 'plugins'.
 	check_array_object($self, 'plugins', 'Data::MARC::Validator::Report::Plugin');
