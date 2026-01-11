@@ -20,6 +20,7 @@ has filters => (
 );
 
 has params => (
+	default => {},
 	is => 'ro',
 );
 
