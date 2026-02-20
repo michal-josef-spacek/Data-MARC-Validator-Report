@@ -21,6 +21,7 @@ meta-spec:
 name: Data-MARC-Validator-Report
 no_index:
   directory:
+    - examples
     - inc
     - t
     - xt

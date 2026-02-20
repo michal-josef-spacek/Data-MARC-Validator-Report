@@ -5,4 +5,6 @@ use Test::NoWarnings;
 use Test::Pod::Coverage 'tests' => 2;
 
 # Test.
-pod_coverage_ok('Data::MARC::Validator::Report::Error', 'Data::MARC::Validator::Report::Error is covered.');
+pod_coverage_ok('Data::MARC::Validator::Report::Error',
+	{ 'also_private' => ['BUILD'] },
+	'Data::MARC::Validator::Report::Error is covered.');

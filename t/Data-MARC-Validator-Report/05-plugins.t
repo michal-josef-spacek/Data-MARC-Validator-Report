@@ -23,7 +23,9 @@ $obj = Data::MARC::Validator::Report->new(
 	'datetime' => DateTime->now,
 	'plugins' => [
 		Data::MARC::Validator::Report::Plugin->new(
+			'module_name' => 'MARC::Validator::Plugin::Foo',
 			'name' => 'foo',
+			'version' => 0.01,
 		),
 	],
 );

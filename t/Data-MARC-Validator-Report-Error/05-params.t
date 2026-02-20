@@ -8,27 +8,26 @@ use Test::NoWarnings;
 # Test.
 my $obj = Data::MARC::Validator::Report::Error->new(
 	'error' => 'This is the error',
-	'record_id' => 'id1',
 );
-my $ret_ar = $obj->filters;
+my $ret_hr = $obj->params;
 is_deeply(
-	$ret_ar,
-	[],
-	'Get filters ([] - default).',
+	$ret_hr,
+	{},
+	'Get parameters ({} - default).',
 );
 
 # Test.
 $obj = Data::MARC::Validator::Report::Error->new(
 	'error' => 'This is the error',
-	'filters' => ['material_book', 'rda'],
-	'record_id' => 'id1',
+	'params' => {
+		'key' => 'value',
+	},
 );
-$ret_ar = $obj->filters;
+$ret_hr = $obj->params;
 is_deeply(
-	$ret_ar,
-	[
-		'material_book',
-		'rda',
-	],
-	'Get filters (material_book, rda).',
+	$ret_hr,
+	{
+		'key' => 'value',
+	},
+	'Get parameters (key => value).',
 );
