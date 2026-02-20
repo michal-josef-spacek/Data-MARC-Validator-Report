@@ -22,8 +22,8 @@ sub BUILD {
 	my $self = shift;
 
 	# Check 'datetime'.
-	check_isa($self, 'datetime', 'DateTime');
 	check_required($self, 'datetime');
+	check_isa($self, 'datetime', 'DateTime');
 
 	# Check 'plugins'.
 	check_array_object($self, 'plugins', 'Data::MARC::Validator::Report::Plugin');
