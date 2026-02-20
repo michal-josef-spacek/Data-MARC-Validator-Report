@@ -5,6 +5,7 @@ use warnings;
 
 use Mo qw(build default is);
 use Mo::utils 0.05 qw(check_isa check_length check_required);
+use Mo::utils::Perl qw(check_version);
 
 our $VERSION = 0.01;
 
@@ -40,7 +41,7 @@ sub BUILD {
 
 	# Check 'version'.
 	check_required($self, 'version');
-	# TODO Check Perl version
+	check_version($self, 'version');
 
 	return;
 }

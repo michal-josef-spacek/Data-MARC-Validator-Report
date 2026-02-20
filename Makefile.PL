@@ -22,6 +22,7 @@ requires 'Mo' => 0;
 requires 'Mo::utils' => 0;
 requires 'Mo::utils::Array' => 0;
 requires 'Mo::utils::Hash' => 0;
+requires 'Mo::utils::Perl' => 0;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Data-MARC-Validator-Report/issues';
 resources 'homepage' => 'https://github.com/michal-josef-spacek/Data-MARC-Validator-Report';
 resources 'repository' => 'git://github.com/michal-josef-spacek/Data-MARC-Validator-Report';

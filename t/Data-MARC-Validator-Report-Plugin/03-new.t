@@ -6,7 +6,7 @@ use Data::MARC::Validator::Report::Errors;
 use Data::MARC::Validator::Report::Plugin;
 use English;
 use Error::Pure::Utils qw(clean);
-use Test::More 'tests' => 6;
+use Test::More 'tests' => 7;
 use Test::NoWarnings;
 
 # Test.
@@ -74,4 +74,16 @@ eval {
 };
 is($EVAL_ERROR, "Parameter 'version' is required.\n",
 	"Parameter 'version' is required.");
+clean();
+
+# Test.
+eval {
+	Data::MARC::Validator::Report::Plugin->new(
+		'module_name' => 'MARC::Validator::Plugin::Foo',
+		'name' => 'foo',
+		'version' => 'bad',
+	);
+};
+is($EVAL_ERROR, "Parameter 'version' isn't right Perl version.\n",
+	"Parameter 'version' isn't right Perl version (bad).");
 clean();

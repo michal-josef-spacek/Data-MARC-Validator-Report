@@ -2,7 +2,6 @@ TODO
 ====
 2. Doc.
 4. Improve constructor tests (errors).
-5. Add Perl module version check, after Mo::utils::Perl.
 6. Add string check to Data::MARC::Validator::Report::Errors::record_id.
 7.
 
@@ -13,3 +12,6 @@ OK [20251103] skim
 
 3. Tests.
 OK [20260111] skim
+
+5. Add Perl module version check, after Mo::utils::Perl.
+OK [20260220] skim
