@@ -27,7 +27,7 @@ no_index:
     - xt
 requires:
   Mo: 0
-  Mo::utils: 0
+  Mo::utils: 0.08
   Mo::utils::Array: 0
   Mo::utils::Hash: 0
   Mo::utils::Perl: 0

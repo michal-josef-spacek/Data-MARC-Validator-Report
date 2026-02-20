@@ -19,7 +19,7 @@ perl_version 5.008;
 readme_from 'Report.pm';
 recursive_author_tests('xt');
 requires 'Mo' => 0;
-requires 'Mo::utils' => 0;
+requires 'Mo::utils' => 0.08;
 requires 'Mo::utils::Array' => 0;
 requires 'Mo::utils::Hash' => 0;
 requires 'Mo::utils::Perl' => 0;
