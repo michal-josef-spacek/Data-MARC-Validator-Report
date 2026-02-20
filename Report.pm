@@ -98,10 +98,10 @@ Return reference to array with L<Data::MARC::Validator::Report::Plugin> objects.
 
  new():
          From Mo::utils:
+                 Parameter 'datetime' is required.
                  Parameter 'datetime' must be a 'DateTime' object.
                          Value: %s
                          Reference: %s
-                 Parameter 'datetime' is required.
 
          From Mo::utils::Array:
                  Parameter 'plugins' must be a array.
