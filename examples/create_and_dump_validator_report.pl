@@ -6,6 +6,7 @@ use warnings;
 use Data::Printer;
 use Data::MARC::Validator::Report;
 use Data::MARC::Validator::Report::Error;
+use Data::MARC::Validator::Report::Errors;
 use Data::MARC::Validator::Report::Plugin;
 use DateTime;
 
@@ -14,16 +15,27 @@ my $report = Data::MARC::Validator::Report->new(
         'datetime' => DateTime->now,
         'plugins' => [
                 Data::MARC::Validator::Report::Plugin->new(
-                        'errors' => [
-                                Data::MARC::Validator::Report::Error->new(
-                                        'error' => 'The test error',
-                                        'filters' => ['foo', 'bar'],
-                                        'params' => {'key' => 'value'},
-                                        'record_id' => 'id1',
-                                ),
-                        ],
-                        'name' => 'test',
-                        'version' => '0.02',
+                       'errors' => Data::MARC::Validator::Report::Errors->new(
+                               'errors' => [
+                                       Data::MARC::Validator::Report::Error->new(
+                                               'error' => 'Error #1',
+                                               'params' => {
+                                                       'key' => 'value',
+                                               },
+                                       ),
+                                       Data::MARC::Validator::Report::Error->new(
+                                               'error' => 'Error #2',
+                                               'params' => {
+                                                       'key' => 'value',
+                                               },
+                                       ),
+                               ],
+                               'filters' => ['filter1', 'filter2'],
+                               'record_id' => 'id1',
+                       ),
+                       'module_name' => 'MARC::Validator::Plugin::Foo',
+                       'name' => 'foo',
+                       'version' => '0.01',
                 ),
         ],
 );
@@ -42,7 +54,7 @@ p $report;
 #             check_array_object
 #     private methods (0)
 #     internals: {
-#         datetime   2026-01-11T11:05:23 (DateTime),
+#         datetime   2026-02-20T10:59:39 (DateTime),
 #         plugins    [
 #             [0] Data::MARC::Validator::Report::Plugin
 #         ]
