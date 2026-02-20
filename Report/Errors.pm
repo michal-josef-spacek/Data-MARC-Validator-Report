@@ -34,6 +34,7 @@ sub BUILD {
 
 	# Check 'record_id'.
 	check_required($self, 'record_id');
+	# TODO Check string.
 
 	return;
 }
