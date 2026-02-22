@@ -7,7 +7,7 @@ use Mo qw(build default is);
 use Mo::utils qw(check_required);
 use Mo::utils::Array qw(check_array check_array_object);
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 has errors => (
 	default => [],

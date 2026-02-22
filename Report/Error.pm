@@ -7,7 +7,7 @@ use Mo qw(build default is);
 use Mo::utils qw(check_required);
 use Mo::utils::Hash qw(check_hash);
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 has error => (
 	is => 'ro',

@@ -7,7 +7,7 @@ use Mo qw(build default is);
 use Mo::utils 0.08 qw(check_isa check_required);
 use Mo::utils::Array qw(check_array_object);
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 has datetime => (
 	is => 'ro',
@@ -210,6 +210,6 @@ the Czech Republic (DKRVO 2024–2028), Area 11: Linked Open Data.
 
 =head1 VERSION
 
-0.01
+0.02
 
 =cut
