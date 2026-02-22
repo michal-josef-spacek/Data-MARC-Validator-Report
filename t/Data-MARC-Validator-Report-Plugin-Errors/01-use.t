@@ -7,8 +7,8 @@ use Test::NoWarnings;
 BEGIN {
 
 	# Test.
-	use_ok('Data::MARC::Validator::Report::Errors');
+	use_ok('Data::MARC::Validator::Report::Plugin::Errors');
 }
 
 # Test.
-require_ok('Data::MARC::Validator::Report::Errors');
+require_ok('Data::MARC::Validator::Report::Plugin::Errors');
