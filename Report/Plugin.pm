@@ -5,6 +5,7 @@ use warnings;
 
 use Mo qw(build default is);
 use Mo::utils 0.05 qw(check_isa check_length check_required);
+use Mo::utils::Array qw(check_array_object);
 use Mo::utils::Perl qw(check_version);
 
 our $VERSION = 0.01;
@@ -29,7 +30,7 @@ sub BUILD {
 	my $self = shift;
 
 	# Check 'errors'.
-	check_isa($self, 'errors', 'Data::MARC::Validator::Report::Errors');
+	check_array_object($self, 'errors', 'Data::MARC::Validator::Report::Errors');
 
 	# Check 'module_name'.
 	check_required($self, 'module_name');
