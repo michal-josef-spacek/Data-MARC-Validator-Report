@@ -1,12 +1,12 @@
 use strict;
 use warnings;
 
-use Data::MARC::Validator::Report::Errors;
+use Data::MARC::Validator::Report::Plugin::Errors;
 use Test::More 'tests' => 3;
 use Test::NoWarnings;
 
 # Test.
-my $obj = Data::MARC::Validator::Report::Errors->new(
+my $obj = Data::MARC::Validator::Report::Plugin::Errors->new(
 	'record_id' => 'id1',
 );
 my $ret_ar = $obj->filters;
@@ -17,7 +17,7 @@ is_deeply(
 );
 
 # Test.
-$obj = Data::MARC::Validator::Report::Errors->new(
+$obj = Data::MARC::Validator::Report::Plugin::Errors->new(
 	'filters' => ['foo', 'bar'],
 	'record_id' => 'id1',
 );

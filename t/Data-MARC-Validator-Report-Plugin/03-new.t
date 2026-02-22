@@ -2,8 +2,8 @@ use strict;
 use warnings;
 
 use Data::MARC::Validator::Report::Error;
-use Data::MARC::Validator::Report::Errors;
 use Data::MARC::Validator::Report::Plugin;
+use Data::MARC::Validator::Report::Plugin::Errors;
 use English;
 use Error::Pure::Utils qw(clean);
 use Test::More 'tests' => 7;
@@ -11,8 +11,10 @@ use Test::NoWarnings;
 
 # Test.
 my $obj = Data::MARC::Validator::Report::Plugin->new(
-	'errors' => [
-		Data::MARC::Validator::Report::Errors->new(
+	'module_name' => 'MARC::Validator::Plugin::Foo',
+	'name' => 'foo',
+	'plugin_errors' => [
+		Data::MARC::Validator::Report::Plugin::Errors->new(
 			'errors' => [
 				Data::MARC::Validator::Report::Error->new(
 					'error' => 'Error #1',
@@ -31,8 +33,6 @@ my $obj = Data::MARC::Validator::Report::Plugin->new(
 			'record_id' => 'id1',
 		),
 	],
-	'module_name' => 'MARC::Validator::Plugin::Foo',
-	'name' => 'foo',
 	'version' => '0.01',
 );
 isa_ok($obj, 'Data::MARC::Validator::Report::Plugin');

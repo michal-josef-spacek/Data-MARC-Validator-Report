@@ -10,15 +10,15 @@ use Mo::utils::Perl qw(check_version);
 
 our $VERSION = 0.01;
 
-has errors => (
-	is => 'ro',
-);
-
 has module_name => (
 	is => 'ro',
 );
 
 has name => (
+	is => 'ro',
+);
+
+has plugin_errors => (
 	is => 'ro',
 );
 
@@ -29,9 +29,6 @@ has version => (
 sub BUILD {
 	my $self = shift;
 
-	# Check 'errors'.
-	check_array_object($self, 'errors', 'Data::MARC::Validator::Report::Errors');
-
 	# Check 'module_name'.
 	check_required($self, 'module_name');
 	check_length($self, 'module_name', 255);
@@ -39,6 +36,9 @@ sub BUILD {
 	# Check 'name'.
 	check_required($self, 'name');
 	check_length($self, 'name', 255);
+
+	# Check 'plugin_errors'.
+	check_array_object($self, 'plugin_errors', 'Data::MARC::Validator::Report::Plugin::Errors');
 
 	# Check 'version'.
 	check_required($self, 'version');

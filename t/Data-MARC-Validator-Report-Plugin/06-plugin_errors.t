@@ -2,8 +2,8 @@ use strict;
 use warnings;
 
 use Data::MARC::Validator::Report::Error;
-use Data::MARC::Validator::Report::Errors;
 use Data::MARC::Validator::Report::Plugin;
+use Data::MARC::Validator::Report::Plugin::Errors;
 use Test::More 'tests' => 3;
 use Test::NoWarnings;
 
@@ -13,13 +13,15 @@ my $obj = Data::MARC::Validator::Report::Plugin->new(
 	'name' => 'foo',
 	'version' => '0.01',
 );
-my $ret = $obj->errors;
-is($ret, undef, 'Get errors (undef - no Errors object).');
+my $ret = $obj->plugin_errors;
+is($ret, undef, 'Get plugin errors (undef - no Errors object).');
 
 # Test.
 $obj = Data::MARC::Validator::Report::Plugin->new(
-	'errors' => [
-		Data::MARC::Validator::Report::Errors->new(
+	'module_name' => 'MARC::Validator::Plugin::Foo',
+	'name' => 'foo',
+	'plugin_errors' => [
+		Data::MARC::Validator::Report::Plugin::Errors->new(
 			'errors' => [
 				Data::MARC::Validator::Report::Error->new(
 					'error' => 'Error #1',
@@ -38,9 +40,7 @@ $obj = Data::MARC::Validator::Report::Plugin->new(
 			'record_id' => 'id1',
 		),
 	],
-	'module_name' => 'MARC::Validator::Plugin::Foo',
-	'name' => 'foo',
 	'version' => '0.01',
 );
-$ret = $obj->errors;
-isa_ok($ret->[0], 'Data::MARC::Validator::Report::Errors');
+$ret = $obj->plugin_errors;
+isa_ok($ret->[0], 'Data::MARC::Validator::Report::Plugin::Errors');

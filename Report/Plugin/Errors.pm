@@ -1,4 +1,4 @@
-package Data::MARC::Validator::Report::Errors;
+package Data::MARC::Validator::Report::Plugin::Errors;
 
 use strict;
 use warnings;
