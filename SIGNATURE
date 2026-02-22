@@ -1,0 +1,84 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.88.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: RIPEMD160
+
+SHA256 5eb69dae2c42c643fd29f5943b7f5ddd70e72f2f58eb49f93c06dc940d1ab795 CONCEPT
+SHA256 74e535469f297189dbd9d9b4704ab00caf9618b69f3c5016ae736f53ad2cdae4 Changes
+SHA256 f41ca75591a4efed31ac3636bc9c73b6df01e611e26a9d91a61deee01101f6fe LICENSE
+SHA256 fb1227e215c5ec828cdc2e946c837083cddf6e6df636ac0f9f0060497ea5989f MANIFEST
+SHA256 c952179ac4eb0c14b45d63f7747b278034cf84bf3fd35de55461dc745b747d28 META.yml
+SHA256 f7f0be0aadee205450425d3527a20ef1a83d38a1aeda7e07a2176a1295f21b30 Makefile.PL
+SHA256 2cd80b17fa7a90c8ec49267df84ceef0af3efe2bb88835662555b5ae94a21076 README
+SHA256 f96c67250f9728c8d069586e4e7d8f3113b38ded10ca6e9801df61bd37ea2418 Report.pm
+SHA256 c0869ee69737c6e828f31dc871c646681f48be2cb044a02c7381d61593fc92ee Report/Error.pm
+SHA256 6ca3d9bc303db1bf6f53ad28d7234cbfae4aa1b9317dd936c9f928c1b6671ddb Report/Plugin.pm
+SHA256 38029f5097520619d30bc8560119a9d83155e4d6e01e5fc0bd145d39d72a05f6 Report/Plugin/Errors.pm
+SHA256 06b4663a9e174b7d2d31d57636e6930ba6819ebab245e97cde71a6b03ee270c8 examples/create_and_dump_validator_report.pl
+SHA256 cd5397bbe618f5bbd4e12a33b0cf5d21114e771c2dbd0ce28e2135beb52c35a8 inc/Module/Install.pm
+SHA256 8bd506c33fb78f10f6451413e931ca23541fcc4eebe05fcb7c7c9577341223c4 inc/Module/Install/AuthorRequires.pm
+SHA256 1b5430a46a35142ef8914d8c745196fca825defc9dfa7e389299bf294613825e inc/Module/Install/AuthorTests.pm
+SHA256 798836f9ccb8d204b1be31fc3835631f57e9d818b21a8f0d14bfcfb82ff4a72a inc/Module/Install/Base.pm
+SHA256 d64cd4c16f83c5baf11f64a44bea3a0abc060a49da5aba040f0eb01394bf75ab inc/Module/Install/Can.pm
+SHA256 65d7a6098bf3f829e8c1c2865476d3537aa6f0ad0ffc9149e10812c856529043 inc/Module/Install/Fetch.pm
+SHA256 70c4b77acab3ff51dfb318110369607cb109e1c319459249623b787cf3859750 inc/Module/Install/Makefile.pm
+SHA256 14556386168007ce913e669fc08a332ccdb6140246fd55a90c879b5190c1b57a inc/Module/Install/Metadata.pm
+SHA256 53825bc78e4c910b888160bc148c8bc211be58e02b99c8edcbf4854f95faa049 inc/Module/Install/ReadmeFromPod.pm
+SHA256 4c746c02c5cc19bed4c352e76205b4adff4c45ce8310d71294e1b83c059659c2 inc/Module/Install/Win32.pm
+SHA256 d3d9b4583243c470ae895defa4c44564485b53693cba1c50ab0320768f443e97 inc/Module/Install/WriteAll.pm
+SHA256 8f4c6083cabbee629bd348909dc441e7a990f5da9680096f820a4487b73425fd t/Data-MARC-Validator-Report-Error/01-use.t
+SHA256 cca1354a492679f2dda36a8321a61b2cd7afb1eff5dd5dbb3e1a179f144e452f t/Data-MARC-Validator-Report-Error/02-version.t
+SHA256 147aaf51f5433b0744fcce01655341997a0263b9795b06cef0dfb171ba58aed9 t/Data-MARC-Validator-Report-Error/03-new.t
+SHA256 44a4b1792469fd7f8320da8c43f9638e46d75c42aab16f0495ed066069367d6c t/Data-MARC-Validator-Report-Error/04-error.t
+SHA256 e23ec03393156563270a301f6df357f8e67100b4d4172ae9e806cf75e9b7c259 t/Data-MARC-Validator-Report-Error/05-params.t
+SHA256 f57a8e9c7359cde7d99939fe7a00c1aaf09b07970a87f5dcfdb1a9d9452102f9 t/Data-MARC-Validator-Report-Plugin-Errors/01-use.t
+SHA256 2dd2a211be656a88f74d43ba6f34254cdfae00ba26c0eff31ea85b90e0a0900b t/Data-MARC-Validator-Report-Plugin-Errors/02-version.t
+SHA256 82cdbb4adf5d1b067dec080f282a2bdb9756b62745d2b21d1179de7d345e0f1a t/Data-MARC-Validator-Report-Plugin-Errors/03-new.t
+SHA256 b4a31a0f76a74ec5a34ffea712a39784f4ec0455773238a78bb5cae587e7b304 t/Data-MARC-Validator-Report-Plugin-Errors/04-errors.t
+SHA256 cf1502dc1f5e2d26e6f4a1ccb7130d821fe693d32c2e7e17f60fc1e13d17d7fd t/Data-MARC-Validator-Report-Plugin-Errors/05-filters.t
+SHA256 d46baa0abd836b338910d3603f3d4ec9ba5861114bab186088e967f86382d1e5 t/Data-MARC-Validator-Report-Plugin-Errors/06-record_id.t
+SHA256 155f7bb8494d18f4c8f6fc6cc82a2904ff4a028aa1cda8237666882820fa364e t/Data-MARC-Validator-Report-Plugin/01-use.t
+SHA256 d6f66db2e34844e22abd7f473b468dbbbd5bffbb3533c95bbad9fe6ae9a06b64 t/Data-MARC-Validator-Report-Plugin/02-version.t
+SHA256 7de1242c557b4af581308672dfbfb76f449699bae87b434313a61535dcafec3a t/Data-MARC-Validator-Report-Plugin/03-new.t
+SHA256 10ba1887bf39970966379c416137f7220e52c9140544a453bfaa6b720f6b9c00 t/Data-MARC-Validator-Report-Plugin/04-module_name.t
+SHA256 1499038859d7c5d510fa3fcf293d659564ac35dc6d8fa6265d16792ddf766d53 t/Data-MARC-Validator-Report-Plugin/05-name.t
+SHA256 8e054f9bec003e9f9c173ded54175d0594122e102c3760931aaf92d487606588 t/Data-MARC-Validator-Report-Plugin/06-plugin_errors.t
+SHA256 3124a56bad7354b562ffc352e71fdbf28eefc796a4cc9bb0b68cab867d139876 t/Data-MARC-Validator-Report-Plugin/07-version.t
+SHA256 5362f33be9ce15b42f62877616329f5d11a9ee66071fc0dac029beb7b1fb37ce t/Data-MARC-Validator-Report/01-use.t
+SHA256 e44aecc191002392b6df90bb5240009f7151783a64add2e32a136513b21772de t/Data-MARC-Validator-Report/02-version.t
+SHA256 87793db57911ac26dc01419fb1ffb5d2f74cd2450e6e68e07172f4205a044c7a t/Data-MARC-Validator-Report/03-new.t
+SHA256 337fdbe4719788d3adf5526753bdd0325c66b29867043bed77e60098071564f9 t/Data-MARC-Validator-Report/04-datetime.t
+SHA256 029d33d5d366c7b669734b6d16300c4d80dc387c3337a31edb00c4c0690c019e t/Data-MARC-Validator-Report/05-plugins.t
+SHA256 080c084dcab6e47b37f7d7c852b1527b4abbbdb16726e8446cc0463743ae1354 xt/Data-MARC-Validator-Report-Error/01-pod_coverage.t
+SHA256 af86cc6a072aeeb8d224a6c7b5ced207507ca226b931e20ee95b70d1440a796a xt/Data-MARC-Validator-Report-Error/02-pod.t
+SHA256 bd49de4daedd175181a79f6db458dcf721ecea55a25d3580c672fd59b893b8e5 xt/Data-MARC-Validator-Report-Errors/01-pod_coverage.t
+SHA256 545d3a06a5b8b5428f90fda339800b935789e6e433b5585a0f98d64ea4ee04d4 xt/Data-MARC-Validator-Report-Errors/02-pod.t
+SHA256 3137894bd635cecd1af06ec8524b17e5431a6b90ce3cc0ee1b3a1f33cd1d3601 xt/Data-MARC-Validator-Report-Plugin/01-pod_coverage.t
+SHA256 736dc01c68f90f34016e0486760d413d901c63f149716277ed01cbd25eac2fd2 xt/Data-MARC-Validator-Report-Plugin/02-pod.t
+SHA256 db6ffec23b48b8bf8c1e9260fc879874eae1bdb1d2de6e8419f13fd6fe617bc8 xt/Data-MARC-Validator-Report/01-pod_coverage.t
+SHA256 2561dbf0af9174015ec11eb5ae6d46a746608dd5f343349193d9bb9ab5f8466d xt/Data-MARC-Validator-Report/02-pod.t
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBAwAdFiEECAMiMrHl7JYa0rZPZ58rGyDXs5UFAmma6wsACgkQZ58rGyDX
+s5VS9QwAz9uv+r4RzpbzIKMDDmtmoCH/v3gCLpovF3xikHXMKXxvEYaQi88dpABe
+/dz1/NRimZPBP8Kdqk2cAz4BFIHzmTjPkFPoD6E7a4Y5Ky/BMWOqEBSy0hrK3zML
+6trY1IZQ4xzrCKlUkdBx1tqDdE4S+RYFodNvfm/69kiIRDqi8Gu62WlIIsXkTq9z
+qsJgBIeR3ihR5lAftkRuOUYfmJ5It/ozy2jrZCZJb8HeVF5bU/dNyZLjqIJuw4nr
+mVqZWb+NRuzYeFh7ziBrITSsNZk90PkNpTgrRBPdSdy+k8nHo22LF2v9PU0tydOU
+clVxbMG2bkY2YxF9HcrZYvpcJDsAeCQT+W8KPP63M7KFjNgmNuoX/SjAs3M7LJHP
+h5D9PV/N89Th+y/xmXOadSIJ1flejl7mB8Rqqv4kT27LzGZPM3og1PjK+XkxTWSo
+w+h03LwkTaw2PhYvscQNWnVKLjdNTo+AA75gh8DgJNHO2oRFz9PKzl/YUUAS7/gh
+zq9nCarf
+=Ssap
+-----END PGP SIGNATURE-----

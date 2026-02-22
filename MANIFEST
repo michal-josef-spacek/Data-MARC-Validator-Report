@@ -21,6 +21,7 @@ Report.pm
 Report/Error.pm
 Report/Plugin.pm
 Report/Plugin/Errors.pm
+SIGNATURE
 t/Data-MARC-Validator-Report-Error/01-use.t
 t/Data-MARC-Validator-Report-Error/02-version.t
 t/Data-MARC-Validator-Report-Error/03-new.t
