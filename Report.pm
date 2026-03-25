@@ -122,8 +122,8 @@ Return reference to array with L<Data::MARC::Validator::Report::Plugin> objects.
  use Data::Printer;
  use Data::MARC::Validator::Report;
  use Data::MARC::Validator::Report::Error;
- use Data::MARC::Validator::Report::Errors;
  use Data::MARC::Validator::Report::Plugin;
+ use Data::MARC::Validator::Report::Plugin::Errors;
  use DateTime;
 
  # Create data object for validator report.
@@ -132,7 +132,7 @@ Return reference to array with L<Data::MARC::Validator::Report::Plugin> objects.
          'plugins' => [
                  Data::MARC::Validator::Report::Plugin->new(
                         'errors' => [
-                                Data::MARC::Validator::Report::Errors->new(
+                                Data::MARC::Validator::Report::Plugin::Errors->new(
                                         'errors' => [
                                                 Data::MARC::Validator::Report::Error->new(
                                                         'error' => 'Error #1',
